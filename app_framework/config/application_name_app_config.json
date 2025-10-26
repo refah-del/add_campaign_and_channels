@@ -1,0 +1,22 @@
+{
+	"meta":{
+		"version": "v1",
+		"app_name": "Application Name",
+		"log_prefix": "application_name"
+	},
+	"database":{
+		"pool":{
+			"name": "app_name_db_bool",
+			"size": 10,
+			"reset_session": true
+		},
+		"connection":{
+			"config":{
+				"database": "database_name",
+				"user": "database_username",
+				"host": "localhost",
+				"port": 8889
+			}
+		}
+	}
+}
