@@ -2,7 +2,7 @@
 
 import logging
 import logging.handlers
-from application_name.settings import Settings
+from ADD_CAMPAIGN_AND_CHANNELS.settings import Settings
 import os
 
 class LoggingService():

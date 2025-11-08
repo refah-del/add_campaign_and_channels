@@ -1,7 +1,7 @@
 """Implements the applicatin user interface."""
 
-from application_name.application_base import ApplicationBase
-from application_name.service_layer.app_services import AppServices
+from add_campaign_and_channels.application_base import ApplicationBase
+from add_campaign_and_channels.service_layer.app_services import AppServices
 import inspect
 import json
 

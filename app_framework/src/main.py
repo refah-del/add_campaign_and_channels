@@ -2,7 +2,7 @@
 
 import json
 from argparse import ArgumentParser
-from application_name.presentation_layer.user_interface import UserInterface
+from add_campaign_and_channels.presention_layer.user_interface import userInterface
 
 
 
@@ -15,6 +15,7 @@ def main():
 		with open(args.configfile, 'r') as f:
 			config = json.loads(f.read())
 
+		print("configuration loaded successfully.")	
 	ui = UserInterface(config)
 	ui.start()
 			
@@ -22,19 +23,37 @@ def main():
 
 
 def configure_and_parse_commandline_arguments():
-	"""Configure and parse command-line arguments."""
-	parser = ArgumentParser(
+	"""configure and parse command-line arguments."""
+	parser =ArgumentParser(
 	prog='main.py',
-	description='Start the application with a configuration file.',
-	epilog='POC: Your Name | your@email')
+	description='start the application with aconfiguration file.',
+	epilog='poc:refah | alharbi@mymu.edu')	
+
 
 	parser.add_argument('-c','--configfile',
-					help="Configuration file to load.",
-					required=True)
-	args = parser.parse_args()
+	help= "configuration file to load.",
+	required=True) 
+	args = parser. parse_args()
 	return args
 
-
+	
 
 if __name__ == "__main__":
-	main()
+	main	
+	
+		
+	
+	
+		
+
+
+
+
+
+					
+	
+	
+	
+	
+
+
